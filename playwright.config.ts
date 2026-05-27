@@ -9,7 +9,7 @@ export default defineConfig({
   reporter: [['list'], ['html', { outputFolder: 'playwright-report' }]],
   use: {
     browserName: 'chromium',
-    headless: false,
+    headless: true,
     actionTimeout: 10000,
     baseURL: 'https://www.saucedemo.com',
     screenshot: 'only-on-failure',
