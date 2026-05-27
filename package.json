@@ -1,0 +1,20 @@
+{
+  "name": "assignment-playwright-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ci": "npx playwright test --reporter=list",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test tests/ui",
+    "test:ui:ci": "npx playwright test tests/ui --reporter=list",
+    "test:api": "npx playwright test tests/api",
+    "test:api:ci": "npx playwright test tests/api --reporter=list",
+    "clean": "rm -rf playwright-report test-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
